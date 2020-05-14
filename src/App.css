@@ -24,7 +24,15 @@
   color: white;
 }
 
-.App-link {
+.Resume-header {
+ #TODO: fill this out to get title at top of page
+}
+
+.footer{
+   #TODO: add github link
+}
+
+.Github-link {
   color: #61dafb;
 }
 
