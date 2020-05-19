@@ -1,28 +1,24 @@
 import React from 'react';
 import Title from './components/Title.js'
 import Summary from './components/Summary.js'
-import Image from './components/Image.js'
+import ProfImage from './components/ProfImage.js'
+import Github from './components/Github.js'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div className= "Img-Container"><ProfImage/></div>
         <div className="Resume-header">
-          <Image/>
           <Title/>
         </div>
+        <div className="Content">
+            <Summary/>
+        </div>
 
-        <Summary/>
         <div className="footer">
-          <a
-            className="Github-link"
-            href="https://github.com/ElliotBarnwell"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github Link
-          </a>
+          <Github/>
         </div>
 
       </header>

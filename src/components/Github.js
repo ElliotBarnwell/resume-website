@@ -1,16 +1,25 @@
 import React, {Component} from 'react';
-import GithubImg from 'images/github.jpg';
+import GithubImg from '../images/github.jpg';
 
 class Github extends Component {
   getImgStyle = () => {
-    return { position: 'absolute',
-            left: 0,
-            top: 0};
+    return { maxWidth:'30%',
+    height: 'auto'};
   }
   render() {
     return (
       <div className="image-container">
-        <img src={GithubImg} className="github-img" alt="github-img" />
+        <a
+          className="Github-link"
+          href="https://github.com/ElliotBarnwell"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        <img src={GithubImg} className="github-img" alt="github-img" style={this.getImgStyle()}/>
+        <br/>
+
+          Github Link
+        </a>
       </div>
     );
   }

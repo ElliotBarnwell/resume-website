@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
 import morty from '../images/evilmorty.JPG';
 
-class Image extends Component {
+class ProfImage extends Component {
   getImgStyle = () => {
-    return { position: 'absolute',
-            left: 50,
-            top: 50};
+    return {
+            float: 'left',
+            width:'40%',
+            height: 'auto',
+          };
   }
   render() {
     return (
-      <div className="image-container">
         <img src={morty} className="profile" alt="logo" style={this.getImgStyle()}/>
-      </div>
     );
   }
 }
 
-export default Image
+export default ProfImage

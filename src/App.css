@@ -24,13 +24,23 @@
   color: white;
 }
 
+.Img-Container{
+  float: left;
+}
+
 .Resume-header {
- #TODO: fill this out to get title at top of page
+  max-width: 75%;
+  height: auto;
+}
+
+.Content{
+  width:70%;
 }
 
 .footer{
    #TODO: add github link
 }
+
 
 .Github-link {
   color: #61dafb;

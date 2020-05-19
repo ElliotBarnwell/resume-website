@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 
 class Summary extends Component {
   getStyle = () => {
-    return { marginLeft: 500,
-            marginRight: 500,
+    return { marginLeft: 100,
+            marginRight: 100,
             borderStyle: 'groove',
             padding: 40,
             };
