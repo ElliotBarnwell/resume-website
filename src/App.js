@@ -32,6 +32,9 @@ function App() {
             </li>
           </ul>
         </div>
+        <div className="Content">
+            <Summary/>
+        </div>
 
 
 
