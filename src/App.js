@@ -1,33 +1,47 @@
 import React from 'react';
-import Title from './components/Title.js'
-import Summary from './components/Summary.js'
-import Image from './components/Image.js'
+import {
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
 import './App.css';
+import Title from './components/title.js'
+import Logo from './components/logo.js'
+import Home from './components/pages/home.js'
+import AboutMe from './components/pages/aboutme.js'
+import Projects from './components/pages/projects.js'
+import Contact from './components/pages/contact.js'
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <div className="Resume-header">
-          <Image/>
+        <div className="nav-container">
+          <Logo/>
           <Title/>
+          <ul className="nav-list">
+            <li className="nav-item">
+              <HashLink to="/aboutme">About Me</HashLink>
+            </li>
+            <li className="nav-item">
+              <HashLink to="/projects">Projects</HashLink>
+            </li>
+            <li className="nav-item">
+              <HashLink to="/contact">Contact</HashLink>
+            </li>
+          </ul>
         </div>
 
-        <Summary/>
-        <div className="footer">
-          <a
-            className="Github-link"
-            href="https://github.com/ElliotBarnwell"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github Link
-          </a>
-        </div>
 
-      </header>
+
+        <Routes>
+          <Route exact path="/" element={<Home/ >}/>
+        </Routes>
+
+
     </div>
+
   );
 }
-
 export default App;

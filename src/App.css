@@ -1,10 +1,83 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+p{
+  margin: 0 0 0 0;
+}
+
+h1{
+  margin: 0 0 0 0;
+  font-size: calc(10px + 2vmin);
+
+}
+
+
 .App {
   text-align: center;
+  background-color: #042940;
+  color: white;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.projects-div{
+  display:flex;
+}
+
+.project-container{
+  display: inherit;
+  margin-top: 10vh;
+  border: solid;
+  background-color: #005C53;
+  padding-bottom: 5vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project-panel{
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-title{
+  align-items: center;
+}
+
+.project-pic{
+  min-width: 20vw;
+  height: 40vh;
+  margin-left: 10vw;
+}
+
+.project-summary{
+  max-width: 400px;
+  margin-left: 5vw;
+  flex: 2;
+}
+
+.nav-container{
+  display: flex;
+  min-height: 10vh;
+  border-bottom-style: groove;
+  background-color: #005C53;
+}
+
+.nav-list{
+  display: flex;
+  margin-left: 40vw;
+  font-size: calc(10px + 2vmin);
+}
+
+.nav-item{
+  display: flex;
+  padding: 2vh 2vw 2vh 2vw;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,27 +86,79 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.app-main-div {
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
-.Resume-header {
- #TODO: fill this out to get title at top of page
+.github-div{
+  margin-top: 10vh;
+  align-items: center;
+  display: inherit;
+}
+
+.github-img{
+  width: 15vw;
+  margin-left: 2vw;
+}
+
+.resume-header {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  min-height: 800px;
+}
+
+.profile-container{
 }
 
 .footer{
    #TODO: add github link
 }
 
-.Github-link {
+.github-link {
   color: #61dafb;
+}
+
+.profile-pic{
+  max-width: 20vw;
+  margin-left: 10vw;
+}
+
+.summary-div {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.logo-img {
+  max-width: 5vw;
+  flex: 1;
+  margin: 2vh 2vw 2vh 2vw;
+}
+
+.title{
+  font-size: 5vh;
+  flex: 1;
+  margin-top: 3vh;
+  margin-left: 4vw;
+}
+
+.page{
+  text-align: center;
+  background-color: inherit;
+  color: white;
+  align-self: center;
+}
+
+
+.Summary-div {
+  border-style: 'groove';
+  padding: 40;
+  color: white;
 }
 
 @keyframes App-logo-spin {
