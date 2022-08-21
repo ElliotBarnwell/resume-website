@@ -4,8 +4,8 @@ import TextfastImg from '../../images/textfast-img.png';
 export default function Projects(){
     return (
       <div className="page">
-        <h2>Projects</h2>
           <section id="projects">
+            <h2>Projects</h2>
             <div className="project-container">
               <a href="https://play.google.com/store/apps/details?id=com.testplay.textfast&hl=en_CA&gl=US">
               <div className="project-title">

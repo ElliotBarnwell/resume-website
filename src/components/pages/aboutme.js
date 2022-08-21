@@ -10,17 +10,19 @@ export default function AboutMe(){
           <div className="summary">
           <p>I'm a software engineer with expertise in testing and optimizing build pipelines</p>
           </div>
-          <div className="aboutme-summary">
 
-              <img src={gamingIcon} className="logo-img" alt="logo"/>
-
-            <p>Engineer by day, gamer at night</p>
-        </div>
         <div className="education-div">
             <h1>Education</h1>
             <img src={westernUni} className="logo-img" alt="logo"/>
             <p>Western University 2016</p>
        </div>
+
+       <div className="aboutme-summary">
+
+           <img src={gamingIcon} className="logo-img" alt="logo"/>
+
+         <p>Engineer by day, gamer at night</p>
+     </div>
         </section>
       </div>
     );
