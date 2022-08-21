@@ -8,9 +8,7 @@ export default function AboutMe(){
         <section id="aboutme">
           <h2>About Me</h2>
           <div className="summary">
-          <h3>Hello!</h3>
-          <p>My name is Elliot Barnwell and I'm a software engineer who loves building software tools</p>
-          <p>I have expertise in testing and optimizing build pipelines</p>
+          <p>I'm a software engineer with expertise in testing and optimizing build pipelines</p>
           </div>
           <div className="aboutme-summary">
 

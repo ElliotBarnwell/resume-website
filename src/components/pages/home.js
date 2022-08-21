@@ -13,6 +13,7 @@ export default function Home(){
           <div className="resume-header">
 
             <div className="summary-div">
+              <h3>Hello!</h3>
               <Summary/>
             </div>
 
