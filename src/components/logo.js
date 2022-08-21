@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import lightbulb from '../images/lightbulb.png'
+import robotFace from '../images/robotfaceicon.png'
 
 class Logo extends Component {
 
   render() {
     return (
       <div className="image-container">
-        <img src={lightbulb} className="logo-img" alt="logo"/>
+        <img src={robotFace} className="logo-img" alt="logo"/>
       </div>
     )
 

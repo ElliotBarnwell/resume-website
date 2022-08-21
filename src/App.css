@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  color: inherit;
+    color: #10454F;
 }
 
 
@@ -14,12 +14,22 @@ h1{
 
 }
 
+h2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section{
+  margin-bottom: 100px;
+}
+
 
 .App {
   text-align: center;
-  background-color: #042940;
-  color: white;
+  background-color: white;
+  color: #10454F;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -32,16 +42,20 @@ h1{
 
 .project-container{
   display: inherit;
-  margin-top: 10vh;
+  flex-direction: row;
+  margin-top: 2vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
   border: solid;
-  background-color: #005C53;
   padding-bottom: 5vh;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .project-panel{
-  margin-top: 5vh;
+  margin-top: 2vh;
   display: flex;
   flex-direction: row;
 }
@@ -51,28 +65,31 @@ h1{
 }
 
 .project-pic{
-  min-width: 20vw;
-  height: 40vh;
-  margin-left: 10vw;
+  min-width: 16vw;
+  margin-left: 5vw;
 }
 
 .project-summary{
-  max-width: 400px;
-  margin-left: 5vw;
+  display: inherit;
+  max-width: 1000px;
+  margin-left: 150px;
   flex: 2;
+  align-items: center;
 }
 
 .nav-container{
   display: flex;
   min-height: 10vh;
-  border-bottom-style: groove;
-  background-color: #005C53;
+  white-space: nowrap;
+  align-items: center;
+
 }
 
 .nav-list{
   display: flex;
-  margin-left: 40vw;
+  margin-left: 20vw;
   font-size: calc(10px + 2vmin);
+
 }
 
 .nav-item{
@@ -87,10 +104,9 @@ h1{
 }
 
 .app-main-div {
-  align-items: center;
   font-size: calc(10px + 2vmin);
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .github-div{
@@ -105,10 +121,20 @@ h1{
 }
 
 .resume-header {
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: row;
-  min-height: 800px;
+  min-height: 500px;
+}
+
+.aboutme-summary{
+  display: flex;
+  flex-direction: row;
+  margin-left: 400px;
+  padding-left: 300px;
+  margin-right: 400px;
+  align-items: center;
 }
 
 .profile-container{
@@ -141,16 +167,13 @@ h1{
 }
 
 .title{
-  font-size: 5vh;
+  font-size: 4vh;
   flex: 1;
-  margin-top: 3vh;
-  margin-left: 4vw;
 }
 
 .page{
   text-align: center;
   background-color: inherit;
-  color: white;
   align-self: center;
 }
 
@@ -158,7 +181,6 @@ h1{
 .Summary-div {
   border-style: 'groove';
   padding: 40;
-  color: white;
 }
 
 @keyframes App-logo-spin {

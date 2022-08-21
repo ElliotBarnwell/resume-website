@@ -9,15 +9,18 @@ import ProfilePic from '../profilePic.js'
 export default function Home(){
   return(
       <div className="app-main-div">
-        <div className="resume-header">
-          <ProfilePic/>
+        <section id="home">
+          <div className="resume-header">
 
-          <div className="summary-div">
-            <Summary/>
+            <div className="summary-div">
+              <Summary/>
+            </div>
+
+            <ProfilePic/>
+
+
           </div>
-
-        </div>
-
+      </section>
 
         <AboutMe/>
         <Projects/>

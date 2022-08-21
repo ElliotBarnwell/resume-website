@@ -1,0 +1,9 @@
+Tasklist 8-21-2022
+
+Set up the hashlinking for single page site
+
+Use a grid instead of flex layout
+
+Fill out about me info
+
+Work on styling

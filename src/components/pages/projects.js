@@ -4,13 +4,12 @@ import TextfastImg from '../../images/textfast-img.png';
 export default function Projects(){
     return (
       <div className="page">
-        <h1>Projects</h1>
-          <section id="projects-sec">
+        <h2>Projects</h2>
+          <section id="projects">
             <div className="project-container">
-
+              <a href="https://play.google.com/store/apps/details?id=com.testplay.textfast&hl=en_CA&gl=US">
               <div className="project-title">
                 <h2>Textfast Android Application</h2>
-                <p>Project link: <a href="https://play.google.com/store/apps/details?id=com.testplay.textfast&hl=en_CA&gl=US">here</a></p>
               </div>
 
               <div className="project-panel">
@@ -23,6 +22,7 @@ export default function Projects(){
                     See who can text the fastest and gain all the glory in Textfast</p>
                 </div>
               </div>
+              </a>
             </div>
           </section>
 

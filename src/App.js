@@ -22,13 +22,16 @@ function App() {
           <Title/>
           <ul className="nav-list">
             <li className="nav-item">
-              <HashLink to="/aboutme">About Me</HashLink>
+              <HashLink smooth to={'/#home'}>Home</HashLink>
             </li>
             <li className="nav-item">
-              <HashLink to="/projects">Projects</HashLink>
+              <HashLink smooth to={'/#aboutme'}>About Me</HashLink>
             </li>
             <li className="nav-item">
-              <HashLink to="/contact">Contact</HashLink>
+              <HashLink  smooth to={'/#projects'}>Projects</HashLink>
+            </li>
+            <li className="nav-item">
+              <HashLink smooth to={'/#contact'}>Contact</HashLink>
             </li>
           </ul>
         </div>
