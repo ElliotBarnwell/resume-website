@@ -2,10 +2,8 @@ import React from 'react';
 import AboutMe from './aboutme.js'
 import Projects from './projects.js'
 import Contact from './contact.js'
-import Github from '../github.js'
 import Summary from '../summary.js'
 import ProfilePic from '../profilePic.js'
-import { Grid, Panel, Placeholder, Row, Col } from 'rsuite';
 
 export default function Home(){
   return(
@@ -14,7 +12,7 @@ export default function Home(){
             <div className="resume-header">
 
               <div className="summary-div">
-                <h3>Hello!</h3>
+                <p className="intro-header">Hello!</p>
                 <Summary/>
               </div>
 

@@ -11,10 +11,10 @@ export default function Contact(){
             <h2>Contact</h2>
             <div className="contact-div">
 
-            <a href="mailto:ejamesb93@gmail.com?subject:testemail" target="_blank"><img className="contact-icon" src={gmail}/></a>
-            <a href="https://www.linkedin.com/in/elliot-barnwell-9b990663/" target="_blank"><img className="contact-icon" src={linkedIn}/></a>
-            <a href="https://twitter.com/EjBwell" target="_blank"><img className="contact-icon" src={twitter}/></a>
-            <a href="https://github.com/ElliotBarnwell" target="_blank"><img src={GithubImg} className="contact-icon" alt="github-img"/></a>
+            <a href="mailto:ejamesb93@gmail.com" target="_blank" rel="noopener noreferrer"><img className="contact-icon" src={gmail} alt=""/></a>
+            <a href="https://www.linkedin.com/in/elliot-barnwell-9b990663/" target="_blank" rel="noopener noreferrer"><img className="contact-icon" src={linkedIn} alt=""/></a>
+            <a href="https://twitter.com/EjBwell" target="_blank" rel="noopener noreferrer"><img className="contact-icon" src={twitter} alt=""/></a>
+            <a href="https://github.com/ElliotBarnwell" target="_blank" rel="noopener noreferrer"><img src={GithubImg} className="contact-icon" alt="github-img"/></a>
            </div>
           </div>
         </section>
