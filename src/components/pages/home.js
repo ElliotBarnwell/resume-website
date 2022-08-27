@@ -5,32 +5,36 @@ import Contact from './contact.js'
 import Github from '../github.js'
 import Summary from '../summary.js'
 import ProfilePic from '../profilePic.js'
+import { Grid, Panel, Placeholder, Row, Col } from 'rsuite';
 
 export default function Home(){
   return(
       <div className="app-main-div">
         <section id="home">
-          <div className="resume-header">
+            <div className="resume-header">
 
-            <div className="summary-div">
-              <h3>Hello!</h3>
-              <Summary/>
+              <div className="summary-div">
+                <h3>Hello!</h3>
+                <Summary/>
+              </div>
+
+              <ProfilePic/>
+
             </div>
-
-            <ProfilePic/>
-
-
-          </div>
-      </section>
+        </section>
 
         <AboutMe/>
         <Projects/>
         <Contact/>
 
-        <div className="github-div">
-          <Github/>
-        </div>
+
 
       </div>
   );
 }
+
+
+// <div className="github-div">
+//   <Github/>
+// </div>
+//
