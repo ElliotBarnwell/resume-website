@@ -14,6 +14,11 @@ h1{
 
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
 p{
   margin: 0px;
 }
@@ -24,7 +29,8 @@ h2{
 }
 
 section{
-  padding-bottom: 3em;
+  padding-bottom: 1em;
+  width: 100%;
 }
 
 .App {
@@ -32,6 +38,7 @@ section{
   background-color: white;
   color: #10454F;
   font-family: roboto;
+  width: 100%;
 }
 
 .icon{
@@ -55,7 +62,7 @@ section{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .education-div{
@@ -73,8 +80,6 @@ section{
 .project-container{
   display: inline-flex;
   flex-direction: row;
-  margin-top: 50px;
-
 }
 
 .project-panel{
@@ -99,7 +104,7 @@ section{
 
 .project-pic{
   width: auto;
-  min-height: 250px;
+  min-height: 215px;
 }
 
 .project-summary{
@@ -170,7 +175,6 @@ section{
   padding-bottom: 2em;
   display: flex;
   flex-direction: row;
-  min-height: 500px;
   margin-left: 300px;
   margin-right: 300px;
 }
@@ -230,16 +234,16 @@ section{
 }
 
 .profile-pic{
-  max-width: 20vw;
+  max-width: 15em;
   flex: 1;
 }
 
 .summary-div {
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 2em;
   margin-top: 0px;
   margin-bottom: 40px;
-  max-width: 50vw;
+  min-width: 400px;
 
 }
 
