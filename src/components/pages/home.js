@@ -30,9 +30,3 @@ export default function Home(){
       </div>
   );
 }
-
-
-// <div className="github-div">
-//   <Github/>
-// </div>
-//
