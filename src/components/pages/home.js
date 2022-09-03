@@ -11,7 +11,7 @@ export default function Home(){
         <section id="home">
             <div className="resume-header">
 
-              <div className="summary-div">
+              <div>
                 <p className="intro-header">Hello!</p>
                 <Summary/>
               </div>
