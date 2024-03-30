@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import profile from '../images/profile1-modified.png';
+import profile from '../images/profile2.jpg';
 class ProfilePic extends Component {
   render() {
     return (
       <div className="profile-container">
-        <img src={profile} className="profile-pic" alt="logo"/>
+        <img src={profile} className="profile-pic" alt="profile"/>
       </div>
     );
   }
