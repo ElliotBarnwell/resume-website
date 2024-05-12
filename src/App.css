@@ -197,6 +197,18 @@ section{
   margin-bottom: 3em;
 }
 
+.experience-panel{
+  display: flex;
+  flex-direction: column;
+  width: 12em;
+  height: 10em;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 10px;
+  padding: 1em 1em 1em 1em;
+}
+
 .tech-div{
   display: flex;
   flex-direction: column;

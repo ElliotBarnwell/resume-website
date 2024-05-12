@@ -57,7 +57,6 @@ export default function AboutMe(){
                 <p>Kubernetes</p>
                 <p>Docker</p>
                 <p>Prometheus</p>
-                <p>gRPC</p>
               </ul>
           </div>
         </div>

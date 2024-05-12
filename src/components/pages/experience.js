@@ -10,19 +10,33 @@ export default function Experience(){
             </div>
 
   <div className="experience-div">
-            <div className="tech-div">
-              Cruise (Current)
-              <p>Senior Software Engineer</p>
+            <div className="experience-panel">
+
+              <div className="panel-title">
+                Cruise (Current)
+                <p>Senior Software Engineer</p>
+              </div>
+              <div className="panel-body">
+                <p>Apart of the Platform Engineering team for an application that AV engineers
+                    used for simulation testing and analysis</p>
+              </div>
+
             </div>
 
-            <div className="tech-div">
+            <div className="experience-panel">
               VTS Inc.
               <p>Software Engineer</p>
+              <p>Lead application migrations to AWS for scalability
+              Configured all 3rd party tools for our applications in AWS
+              </p>
             </div>
 
-            <div className="tech-div">
+            <div className="experience-panel">
               Ecobee
               <p>QA Engineer</p>
+              <p>Developed E2E test infrastructure for mobile and embedded platforms
+                  using docker emulators
+              Developed test infrastructure for smart home products</p>
             </div>
 
             </div>
