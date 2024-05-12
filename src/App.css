@@ -27,22 +27,32 @@ h2{
   padding-bottom: 10px;
 }
 
+.section-header-wrapper{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  align-items: center;
+}
+
 section{
-  padding-bottom: 1em;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
   width: 100%;
 }
 
 .App {
   text-align: center;
-  background-color: white;
-  color: #10454F;
   font-family: roboto;
   width: 100%;
 }
 
 .icon{
-  flex: 1;
+  max-width: 50px;
+  padding-right: 30px;
 }
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -50,25 +60,16 @@ section{
 
 .intro-header{
   font-size: calc(40px + 2vmin);
-  text-align: left;
-  margin-top: 2em;
+  text-align: center;
+  margin-top: 10px;
   margin-left: 50px;
   font-weight: 700;
-}
-
-.about-me-summary{
-  margin-left: 20vw;
-  margin-right: 20vw;
-  margin-bottom: 2em;
 }
 
 .education-div{
   align-items: center;
   text-align: center;
   margin-bottom: 3em;
-}
-
-.education-summary{
 }
 
 .project-container{
@@ -89,7 +90,7 @@ section{
 
 .small-title{
   font-size: calc(8px + 2vmin);
-  text-decoration: underline;
+  font-weight: bolder;
 }
 
 .project-title{
@@ -98,7 +99,7 @@ section{
 
 .project-pic{
   width: auto;
-  height: 20vh;
+  height: 300px;
 }
 
 .project-summary{
@@ -116,12 +117,14 @@ section{
   min-height: 10vh;
   white-space: nowrap;
   align-items: center;
+  background-color: #cac4aa;
 
 }
 
 .nav-list{
   display: flex;
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: calc(10px + 2vmin);
 }
 
@@ -138,9 +141,9 @@ section{
 }
 
 .contact-icon{
-  margin-left: 2vw;
-  margin-right: 2vw;
-  height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -151,6 +154,8 @@ section{
 
 .app-main-div {
   font-size: calc(12px + 2vmin);
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .github-div{
@@ -167,8 +172,6 @@ section{
 .resume-header {
   padding-top: 2vh;
   padding-bottom: 2vh;
-  display: flex;
-  flex-direction: row;
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -177,6 +180,12 @@ section{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+}
+
+.experience-div{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -209,38 +218,21 @@ section{
 }
 
 .skills-list{
-  text-align: center;
   padding: 0;
-  align-items: center;
 }
 
 .profile-container{
   align-items: center;
 }
 
-.footer{
-   #TODO: add github link
-}
-
-.github-link {
-  color: #61dafb;
-}
-
-.profile-pic{
-  width: 25vw;
-  flex: 2;
-}
-
 .summary-div {
-  margin-top: 0px;
   margin-bottom: 40px;
   margin-right: 50px;
   margin-right: 50px;
-  max-width: 30vw;
 }
 
 .logo-img {
-  max-width: 200px;
+  max-width: 125px;
   flex: 1;
   margin: 2vh 2vw 2vh 2vw;
 }
@@ -252,20 +244,16 @@ section{
 }
 
 .title{
-  font-size: 4vh;
+  font-size: calc(5px + 2vmin);
   flex: 1;
 }
 
 #contact{
-  background-color: #506266;
-  color: white;
   padding-top: 30px;
 
 }
 
 #aboutme{
-  background-color: #506266;
-  color: white;
   padding-top: 30px;
   align-content: center;
   justify-content: center;
@@ -304,11 +292,6 @@ section{
     align-items: center;
   }
 
-  .profile-pic{
-    max-width: 300px;
-    flex: 1;
-  }
-
   .summary-div {
     margin-top: 0px;
     margin-bottom: 3vh;
@@ -328,8 +311,8 @@ section{
   }
 
   .project-panel{
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 5px;
@@ -360,8 +343,8 @@ section{
   }
 
   .contact-icon{
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 50px;
   }
 

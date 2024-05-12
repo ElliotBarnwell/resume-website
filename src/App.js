@@ -4,7 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 import './App.css';
-import Title from './components/title.js'
+import Title from './components/Title.js'
 import Logo from './components/logo.js'
 import Home from './components/pages/home.js'
 import { HashLink } from 'react-router-hash-link';
@@ -22,6 +22,9 @@ function App() {
             </li>
             <li className="nav-item">
               <HashLink smooth to={'/#aboutme'}>About Me</HashLink>
+            </li>
+            <li className="nav-item">
+              <HashLink  smooth to={'/#experience'}>Experience</HashLink>
             </li>
             <li className="nav-item">
               <HashLink  smooth to={'/#projects'}>Projects</HashLink>
