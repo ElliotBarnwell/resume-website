@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-
+import { Typography } from '@mui/material';
 class Title extends Component {
 
   render() {
     return (
       <div>
-        <h1 className="title">Elliot Barnwell</h1>
+        <Typography variant="h4" sx={{fontWeight: 20, paddingLeft: 5}}>Elliot Barnwell</Typography>
       </div>
     );
   }

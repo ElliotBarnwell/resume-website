@@ -3,6 +3,11 @@
   src: url(./fonts/roboto/Roboto-Regular.ttf);
 }
 
+@font-face {
+  font-family: simplifica;
+  src: url(./fonts/SIMPLIFICA/SIMPLIFICA-Typeface.ttf);
+}
+
 
 a, a:hover, a:focus, a:active {
      text-decoration: none;
@@ -30,27 +35,30 @@ h2{
 .section-header-wrapper{
   display: flex;
   flex-direction: row;
-  padding: 10px 0;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+
 }
 
 section{
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   width: 100%;
 }
-
 .App {
   text-align: center;
   font-family: roboto;
   width: 100%;
+  background-color: #e4e2dd
 }
 
 .icon{
   max-width: 50px;
   padding-right: 30px;
 }
-
 
 
 .App-logo {
@@ -117,7 +125,8 @@ section{
   min-height: 10vh;
   white-space: nowrap;
   align-items: center;
-  background-color: #cac4aa;
+  background-color: #000;
+  color: #ffff
 
 }
 
@@ -154,8 +163,8 @@ section{
 
 .app-main-div {
   font-size: calc(12px + 2vmin);
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 25vw;
+  margin-right: 25vw;
 }
 
 .github-div{
@@ -194,7 +203,6 @@ section{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3em;
 }
 
 .experience-panel{
@@ -204,18 +212,6 @@ section{
   height: 10em;
   margin-left: 20px;
   margin-right: 20px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 10px;
-  padding: 1em 1em 1em 1em;
-}
-
-.tech-div{
-  display: flex;
-  flex-direction: column;
-  width: 10em;
-  height: 8em;
-  margin-left: 40px;
-  margin-right: 40px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 10px;
   padding: 1em 1em 1em 1em;

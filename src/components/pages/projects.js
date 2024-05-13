@@ -1,8 +1,12 @@
 import React from 'react';
 import TextfastImg from '../../images/textfast-img.png';
-//import DeliveryIcon from '../../images/delivery-icon.png';
 import YoutubeIcon from '../../images/eriderhubchannelpic.jpg';
 import projectIcon from '../../images/customize-computer.png';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import CardMedia from '@mui/material/CardMedia';
 
 export default function Projects(){
     return (
@@ -13,50 +17,67 @@ export default function Projects(){
               </div>
       <div className="project-container">
 
-        <div className="project-panel">
-        <a href="https://play.google.com/store/apps/details?id=com.testplay.textfast&hl=en_CA&gl=US"  target="_blank" rel="noopener noreferrer">
-        <div className="project-title">
-          <h1>Textfast Android Application</h1>
-        </div>
-          <img src={TextfastImg} className="project-pic" alt="logo"/>
+            <Box sx={{ width: 400 , marginLeft: 5, marginRight: 5, boxShadow: 3}}>
+              <a href="https://play.google.com/store/apps/details?id=com.testplay.textfast&hl=en_CA&gl=US"  target="_blank" rel="noopener noreferrer">
+                <Card variant="outlined">{textFastCard}</Card>
+              </a>
+            </Box>
 
-          <div className="project-summary">
 
-            <p>Ever want to test your texting speed?
-              Well now is your chance with Textfast! Compete with yourself and beat your highest score</p>
-          </div>
-        </a>
-      </div>
-
-        {/* <div className="project-panel">
-        <a href="https://github.com/ElliotBarnwell/DeliveryAPI"  target="_blank" rel="noopener noreferrer">
-        <div className="project-title">
-          <h1>Robot delivery API</h1>
-        </div>
-          <img src={DeliveryIcon} className="project-pic" alt="logo"/>
-
-          <div className="project-summary">
-
-            <p>Robot delivery API built using Swagger UI that accepts delivery requests and returns a quote determined by distance</p>
-          </div>
-        </a>
-      </div> */}
-
-      <div className="project-panel">
-        <a href="https://www.youtube.com/channel/UCHrT5jQkooX-R4ntRiFmTzQ"  target="_blank" rel="noopener noreferrer">
-        <div className="project-title">
-          <h1>Youtube Channel: E-RiderHub</h1>
-        </div>
-          <img src={YoutubeIcon} className="project-pic" alt="logo"/>
-
-          <div className="project-summary">
-
-            <p>Youtube channel reviewing PEVs and ride vids in San Francisco. Check out some vids!</p>
-          </div>
-        </a>
-      </div>
+            <Box sx={{ width: 400 , marginLeft: 5, marginRight: 5, boxShadow: 3}}>
+              <a href="https://www.youtube.com/channel/UCHrT5jQkooX-R4ntRiFmTzQ"  target="_blank" rel="noopener noreferrer">
+                <Card variant="outlined">{youtubeCard}</Card>
+              </a>
+            </Box>
 
       </div>
       </section>
     );
 }
+
+const textFastCard = (
+  <React.Fragment>
+    <CardContent>
+      <Typography variant="h4" color="text.secondary" gutterBottom>
+        Android Application
+      </Typography>
+      <Typography variant="h5" component="div">
+        Textfast 
+      </Typography>
+      <CardMedia
+        component="img"
+        maxHeight = "200"
+        image={TextfastImg}
+        alt="textfast icon"
+        sx={{paddingBottom: 1}}
+      />
+      <Typography variant="body2" sx={{marginTop: 5}}>
+      Ever want to test your texting speed?
+              Well now is your chance with Textfast! Compete with yourself and beat your highest score
+      </Typography>
+    </CardContent>
+  </React.Fragment>
+);
+
+const youtubeCard = (
+  <React.Fragment>
+    <CardContent>
+      <Typography variant="h4" color="text.secondary" gutterBottom>
+      Youtube Channel
+      </Typography>
+      <Typography variant="h5" component="div">
+      E-RiderHub
+      </Typography>
+      <CardMedia
+        component="img"
+        maxHeight = "200"
+        image={YoutubeIcon}
+        alt="youtube channel icon"
+        sx={{paddingTop: 5, paddingBottom: 10}}
+      />
+      <Typography variant="body2" sx={{paddingBottom: 1}}>
+      Youtube channel reviewing PEVs and ride vids in San Francisco. Check out some vids!
+      </Typography>
+    </CardContent>
+  </React.Fragment>
+);

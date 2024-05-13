@@ -8,57 +8,44 @@ import aboutmeIcon from '../../images/bars-sort.png';
 import skillsIcon from '../../images/wrench-simple.png'
 import educationIcon from '../../images/school.png'
 import hobbiesIcon from '../../images/biking.png'
+import { Box, Typography, CardContent, Card } from '@mui/material';
 
 export default function AboutMe(){
     return (
         <section id="aboutme">
+
+              <Box
+              maxHeight={600}
+              width={1000}
+              marginRight="auto"
+              marginLeft="auto"
+              my={4}
+              display="flex"
+              flexDirection="column"
+              marginTop={5}
+              gap={2}
+              p={2}
+              sx={{ border: '0px'}}
+              component="fieldset">
           <div className="section-header-wrapper">
             <img src={aboutmeIcon} className="icon" alt="logo"/>
-            <h2>About Me</h2>
+            <Typography variant="h2">About Me</Typography>
           </div>
           <div className="about-me-summary">
-          <p>I'm a full stack software engineer with strong expertise in testing infrastructure and build tools. I have years of experience implementing and maintaining infrastructure</p>
+          <Typography variant="h4" sx={{ paddingLeft: 5}}>I'm a full stack software engineer with strong expertise in testing infrastructure and build tools. I have years of experience implementing and maintaining infrastructure</Typography>
+          
           </div>
+          </Box>
 
         <div className="section-header-wrapper">
           <img src={skillsIcon} className="icon" alt="logo"/>
-          <h1>Skills</h1>
+          <Typography variant="h2" sx={{fontWeight: 50, paddingLeft: 5}}>Skills</Typography>
         </div>
         <div className="experience">
-          <div className="tech-div">
-            <p className="small-title">Cloud Technology</p>
-            <ul className="skills-list">
-              <p>AWS</p>
-              <p>GCP</p>
-            </ul>
-          </div>
-          <div className="tech-div">
-            <p className="small-title">Build Tools</p>
-              <ul className="skills-list">
-                <p>CircleCI</p>
-                <p>Github Actions</p>
-                <p>Buildkite</p>
-              </ul>
-          </div>
-          <div className="tech-div">
-            <p className="small-title">Languages</p>
-              <ul className="skills-list">
-                <p>Go</p>
-                <p>Python</p>
-                <p>Typescript</p>
-                <p>Java</p>
-                <p>Ruby</p>
-              </ul>
-          </div>
-          <div className="tech-div">
-            <p className="small-title">Other Technologies</p>
-              <ul className="skills-list">
-                <p>Terraform</p>
-                <p>Kubernetes</p>
-                <p>Docker</p>
-                <p>Prometheus</p>
-              </ul>
-          </div>
+          {skillsCard("Cloud Technology", ["AWS", "Github Actions", "Buildkite"])}
+          {skillsCard("Build Tools", ["CirclCI", "GCP"])}
+          {skillsCard("Languages", ["Go", "Python", "Typescript", "Java", "Ruby"])}
+          {skillsCard("Other Tools", ["Terraform", "Kubernetes", "Docker", "Prometheus"])}
         </div>
 
         <div className="section-header-wrapper">
@@ -88,3 +75,24 @@ export default function AboutMe(){
         </section>
     );
 }
+
+export function skillsCard(title, contents) {
+  return(
+    <Card
+    variant="outlined"
+    sx={{width: 200, height: 250, paddingLeft: 2, paddingRight: 2, marginLeft: 3, marginRight: 3, boxShadow: 5
+    }}>
+      <CardContent>
+        <Typography variant="h5" color="text.primary" gutterBottom>
+         {title}
+        </Typography>
+        <Typography variant="body1" sx={{marginTop: 5}}>
+          {contents.map(content => 
+          <p>{content}</p>
+          )}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+}
+
