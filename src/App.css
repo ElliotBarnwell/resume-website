@@ -40,6 +40,7 @@ h2{
   justify-content: center;
   padding-top: 2vh;
   padding-bottom: 2vh;
+  color: #53583E
 
 }
 
@@ -52,7 +53,8 @@ section{
   text-align: center;
   font-family: roboto;
   width: 100%;
-  background-color: #e4e2dd
+  /* background-color: #e4e2dd */
+  background-color: #DDDBD7
 }
 
 .icon{
@@ -77,7 +79,6 @@ section{
 .education-div{
   align-items: center;
   text-align: center;
-  margin-bottom: 3em;
 }
 
 .project-container{
@@ -125,7 +126,7 @@ section{
   min-height: 10vh;
   white-space: nowrap;
   align-items: center;
-  background-color: #000;
+  background-color: #593B1F;
   color: #ffff
 
 }

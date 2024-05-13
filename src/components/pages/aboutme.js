@@ -8,7 +8,7 @@ import aboutmeIcon from '../../images/bars-sort.png';
 import skillsIcon from '../../images/wrench-simple.png'
 import educationIcon from '../../images/school.png'
 import hobbiesIcon from '../../images/biking.png'
-import { Box, Typography, CardContent, Card } from '@mui/material';
+import { Box, Typography, CardContent, Card, Divider} from '@mui/material';
 
 export default function AboutMe(){
     return (
@@ -80,13 +80,14 @@ export function skillsCard(title, contents) {
   return(
     <Card
     variant="outlined"
-    sx={{width: 200, height: 250, paddingLeft: 2, paddingRight: 2, marginLeft: 3, marginRight: 3, boxShadow: 5
+    sx={{width: 225, height: 250, paddingLeft: 2, paddingRight: 2, marginLeft: 3, marginRight: 3, boxShadow: 5
     }}>
       <CardContent>
-        <Typography variant="h5" color="text.primary" gutterBottom>
+        <Typography variant="h5" color="text.primary" gutterBottom sx={{height: 30}}>
          {title}
         </Typography>
-        <Typography variant="body1" sx={{marginTop: 5}}>
+       <Divider/ >
+        <Typography variant="h6" sx={{marginTop: 2}}>
           {contents.map(content => 
           <p>{content}</p>
           )}

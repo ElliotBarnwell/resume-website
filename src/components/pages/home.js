@@ -25,7 +25,7 @@ export default function Home(){
               sx={{ border: '3px solid grey'}}
               component="fieldset">
               <legend style={{textAlign:"left", marginLeft: 30}}>
-                <Typography variant="h1" color="#4a3529" >Welcome!</Typography>
+                <Typography variant="h1" color="#53583E" >Welcome!</Typography>
               </legend>
               <div className="summary-div">
               <Typography variant="h3" color="text.secondary"> I'm a software engineer who is passionate about development and testing.
