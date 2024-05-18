@@ -12,21 +12,23 @@ import ecobeeLogo from '../../images/ecobee-logo.png';
 export default function Experience(){
     return (
         <section id="experience">
-            <div className="section-header-wrapper">
-              <img src={mugIcon} className="icon" alt="logo"/>
-              <h2>Experience</h2>
-            </div>
-            <div className="experience-div">
-            <Box sx={{ maxWidth: 350 , marginLeft: 3, marginRight: 3, boxShadow: 3}}>
-              <Card variant="outlined">{cruiseCard}</Card>
-            </Box>
-            <Box sx={{ maxWidth: 350, marginLeft: 3, marginRight: 3, boxShadow: 3}}>
-              <Card variant="outlined">{vtsCard}</Card>
-            </Box>
-            <Box sx={{ maxWidth: 350, marginLeft: 3, marginRight: 3, boxShadow: 3}}>
-              <Card variant="outlined">{ecobeeCard}</Card>
-            </Box>
-            </div>
+          <div className="content-section">
+              <div className="section-header-wrapper">
+                <img src={mugIcon} className="icon" alt="logo"/>
+                <h2>Experience</h2>
+              </div>
+              <div className="experience-div">
+              <Box sx={{ maxWidth: 350 , marginLeft: 3, marginRight: 3, boxShadow: 3}}>
+                <Card variant="outlined">{cruiseCard}</Card>
+              </Box>
+              <Box sx={{ maxWidth: 350, marginLeft: 3, marginRight: 3, boxShadow: 3}}>
+                <Card variant="outlined">{vtsCard}</Card>
+              </Box>
+              <Box sx={{ maxWidth: 350, marginLeft: 3, marginRight: 3, boxShadow: 3}}>
+                <Card variant="outlined">{ecobeeCard}</Card>
+              </Box>
+              </div>
+          </div>
         </section>
     );
 }

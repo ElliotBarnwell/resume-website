@@ -1,17 +1,18 @@
 import React, {Component} from 'react';
-import morty from '../images/evilmorty.JPG';
+import mando from '../images/mando_helmet_1.jpeg';
 
 class ProfImage extends Component {
   getImgStyle = () => {
     return {
-            float: 'left',
-            width:'40%',
-            height: 'auto',
+            width:'auto',
+            maxHeight: '450px',
+            paddingTop: '100px',
+            paddingLeft: '50px'
           };
   }
   render() {
     return (
-        <img src={morty} className="profile" alt="logo" style={this.getImgStyle()}/>
+        <img src={mando} className="profile" alt="logo" style={this.getImgStyle()}/>
     );
   }
 }

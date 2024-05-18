@@ -12,8 +12,9 @@ import { Box, Typography, CardContent, Card, Divider} from '@mui/material';
 
 export default function AboutMe(){
     return (
-        <section id="aboutme">
+        <section id="aboutme" >
 
+<div className="content-section">
               <Box
               maxHeight={600}
               width={1000}
@@ -29,49 +30,59 @@ export default function AboutMe(){
               component="fieldset">
           <div className="section-header-wrapper">
             <img src={aboutmeIcon} className="icon" alt="logo"/>
-            <Typography variant="h2">About Me</Typography>
+            <Typography variant="h2" sx={{fontWeight: 600}} >About Me</Typography>
           </div>
           <div className="about-me-summary">
           <Typography variant="h4" sx={{ paddingLeft: 5}}>I'm a full stack software engineer with strong expertise in testing infrastructure and build tools. I have years of experience implementing and maintaining infrastructure</Typography>
           
           </div>
           </Box>
+          </div>
 
-        <div className="section-header-wrapper">
-          <img src={skillsIcon} className="icon" alt="logo"/>
-          <Typography variant="h2" sx={{fontWeight: 50, paddingLeft: 5}}>Skills</Typography>
-        </div>
-        <div className="experience">
-          {skillsCard("Cloud Technology", ["AWS", "Github Actions", "Buildkite"])}
-          {skillsCard("Build Tools", ["CirclCI", "GCP"])}
-          {skillsCard("Languages", ["Go", "Python", "Typescript", "Java", "Ruby"])}
-          {skillsCard("Other Tools", ["Terraform", "Kubernetes", "Docker", "Prometheus"])}
-        </div>
-
-        <div className="section-header-wrapper">
-          <img src={educationIcon} className="icon" alt="logo"/>
-          <h1>Education</h1>
-        </div>
-        <div className="education-div">
-
-            <img src={westernUni} className="hobby-img" alt="logo"/>
-            <div className="education-summary">
-                <p>BESc. Mechatronic Systems Engineering</p>
-                <p>Western University 2016</p>
+        <div className="content-section">
+          <div className="section-header-wrapper">
+            <img src={skillsIcon} className="icon" alt="logo"/>
+            <Typography variant="h2" sx={{fontWeight: 600, paddingLeft: 5}}>Skills</Typography>
             </div>
+            <div className="experience">
+              {skillsCard("Cloud Technology", ["AWS", "Github Actions", "Buildkite"])}
+              {skillsCard("Build Tools", ["CirclCI", "GCP"])}
+              {skillsCard("Languages", ["Go", "Python", "Typescript", "Java", "Ruby"])}
+              {skillsCard("Other Tools", ["Terraform", "Kubernetes", "Docker", "Prometheus"])}
+            </div>
+            
+          </div>
+
+        <div className="content-section">
+          <div className="section-header-wrapper">
+            <img src={educationIcon} className="icon" alt="logo"/>
+            <Typography variant="h2" sx={{fontWeight: 600}} >Education</Typography>
+          </div>
+
+
+          <div className="education-div">
+
+              <img src={westernUni} className="hobby-img" alt="logo"/>
+              <div className="education-summary">
+                  <p>BESc. Mechatronic Systems Engineering</p>
+                  <p>Western University 2016</p>
+              </div>
+        </div>
        </div>
 
-       <div className="section-header-wrapper">
-          <img src={hobbiesIcon} className="icon" alt="logo"/>
-          <h1>Hobbies</h1>
-       </div>
-       <div className="aboutme-summary">
+       <div className="content-section">
+          <div className="section-header-wrapper">
+              <img src={hobbiesIcon} className="icon" alt="logo"/>
+              <h1>Hobbies</h1>
+          </div>
+          <div className="aboutme-summary">
 
-           <div className="hobby-div"><img src={weightIcon} className="hobby-img" alt="logo"/><p>Working out</p></div>
-           <div className="hobby-div"><img src={gamingIcon} className="hobby-img" alt="logo"/><p>Gaming</p></div>
-           <div className="hobby-div"><img src={projectIcon} className="hobby-img" alt="logo"/><p>Side Projects</p></div>
-           <div className="hobby-div"><img src={youtubeIcon} className="hobby-img" alt="logo"/><p>Youtube editing</p></div>
-     </div>
+              <div className="hobby-div"><img src={weightIcon} className="hobby-img" alt="logo"/><p>Working out</p></div>
+              <div className="hobby-div"><img src={gamingIcon} className="hobby-img" alt="logo"/><p>Gaming</p></div>
+              <div className="hobby-div"><img src={projectIcon} className="hobby-img" alt="logo"/><p>Side Projects</p></div>
+              <div className="hobby-div"><img src={youtubeIcon} className="hobby-img" alt="logo"/><p>Youtube editing</p></div>
+        </div>
+      </div>
         </section>
     );
 }
