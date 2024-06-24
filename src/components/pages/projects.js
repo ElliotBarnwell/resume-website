@@ -11,11 +11,12 @@ import CardMedia from '@mui/material/CardMedia';
 export default function Projects(){
     return (
       <section id="projects">
+        <div className="content-section">
               <div className="section-header-wrapper">
                   <img src={projectIcon} className="icon" alt="logo"/>
                   <h2>Projects</h2>
               </div>
-      <div className="project-container">
+        <div className="project-container">
 
             <Box sx={{ width: 400 , marginLeft: 5, marginRight: 5, boxShadow: 3}}>
               <a href="https://play.google.com/store/apps/details?id=com.testplay.textfast&hl=en_CA&gl=US"  target="_blank" rel="noopener noreferrer">
@@ -30,6 +31,7 @@ export default function Projects(){
               </a>
             </Box>
 
+        </div>
       </div>
       </section>
     );
@@ -37,8 +39,8 @@ export default function Projects(){
 
 const textFastCard = (
   <React.Fragment>
-    <CardContent>
-      <Typography variant="h4" color="text.secondary" gutterBottom>
+    <CardContent sx={{ backgroundColor: '#0C243C', color: '#ffff'}}>
+      <Typography variant="h4" gutterBottom>
         Android Application
       </Typography>
       <Typography variant="h5" component="div">
@@ -51,7 +53,7 @@ const textFastCard = (
         alt="textfast icon"
         sx={{paddingBottom: 1}}
       />
-      <Typography variant="body2" sx={{marginTop: 5}}>
+      <Typography sx={{marginTop: 5}}>
       Ever want to test your texting speed?
               Well now is your chance with Textfast! Compete with yourself and beat your highest score
       </Typography>
@@ -61,8 +63,8 @@ const textFastCard = (
 
 const youtubeCard = (
   <React.Fragment>
-    <CardContent>
-      <Typography variant="h4" color="text.secondary" gutterBottom>
+    <CardContent sx={{ backgroundColor: '#0C243C', color: '#ffff'}}>
+      <Typography variant="h4" gutterBottom>
       Youtube Channel
       </Typography>
       <Typography variant="h5" component="div">
@@ -75,7 +77,7 @@ const youtubeCard = (
         alt="youtube channel icon"
         sx={{paddingTop: 5, paddingBottom: 10}}
       />
-      <Typography variant="body2" sx={{paddingBottom: 1}}>
+      <Typography sx={{paddingBottom: 1}}>
       Youtube channel reviewing PEVs and ride vids in San Francisco. Check out some vids!
       </Typography>
     </CardContent>

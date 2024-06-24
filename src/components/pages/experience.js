@@ -35,14 +35,14 @@ export default function Experience(){
 
 const cruiseCard = (
   <React.Fragment>
-    <CardContent>
-      <Typography variant="h4" color="text.secondary" gutterBottom>
+    <CardContent sx={{ backgroundColor: '#0C243C', color: '#ffff', height: '475px'}}>
+      <Typography variant="h4" gutterBottom>
         Cruise (Current)
       </Typography>
       <Typography variant="h5" component="div">
         Senior Software Engineer
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+      <Typography sx={{ mb: 1.5 }} >
         Jan 2023 - Current
       </Typography>
       <CardMedia
@@ -50,9 +50,9 @@ const cruiseCard = (
         height="194"
         image={cruiseLogo}
         alt="Paella dish"
-        sx={{paddingBottom: "33px"}}
+        sx={{paddingBottom: "10px", paddingTop: "28px"}}
       />
-      <Typography variant="body2" sx={{marginTop: 5}}>
+      <Typography sx={{marginTop: 3}}>
       Apart of the Platform Engineering team for an application that AV engineers
                     used for simulation testing and analysis
         <br />
@@ -63,14 +63,14 @@ const cruiseCard = (
 
 const vtsCard = (
   <React.Fragment>
-    <CardContent>
-      <Typography variant="h4" color="text.secondary" gutterBottom>
+    <CardContent sx={{ backgroundColor: '#0C243C', color: '#ffff', height: '475px'}}>
+      <Typography variant="h4" gutterBottom>
       VTS Inc.
       </Typography>
       <Typography variant="h5" component="div">
       Software Engineer Build & Test infrastructure
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+      <Typography sx={{ mb: 1.5 }} >
        Oct 2020 - Dec 2022
       </Typography>
       <CardMedia
@@ -79,7 +79,7 @@ const vtsCard = (
         image={vtsLogo}
         alt="Paella dish"
       />
-      <Typography variant="body2" sx={{marginTop: 5}} >
+      <Typography sx={{marginTop: 4}} >
         Lead application migrations to AWS for scalability
               Configured all 3rd party tools for our applications in AWS
         <br />
@@ -90,14 +90,14 @@ const vtsCard = (
 
 const ecobeeCard = (
   <React.Fragment>
-    <CardContent>
-      <Typography variant="h4" color="text.secondary" gutterBottom>
+    <CardContent sx={{ backgroundColor: '#0C243C', color: '#ffff', height: '475px'}}>
+      <Typography variant="h4" gutterBottom>
         Ecobee
       </Typography>
       <Typography variant="h5" component="div">
         Senior Software Engineer
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+      <Typography sx={{ mb: 1.5 }} >
         April 2019 - May 2020
       </Typography>
       <CardMedia
@@ -105,9 +105,9 @@ const ecobeeCard = (
         height="194"
         image={ecobeeLogo}
         alt="Paella dish"
-        sx={{paddingBottom: "33px"}}
+        sx={{paddingBottom: "15px", paddingTop: "30px"}}
       />
-      <Typography variant="body2" sx={{marginTop: 5}}>
+      <Typography sx={{marginTop: 3}}>
       Apart of the Platform Engineering team for an application that AV engineers
                     used for simulation testing and analysis
         <br />

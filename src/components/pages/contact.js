@@ -13,7 +13,7 @@ export default function Contact(){
             <img src={contactIcon} className="icon" alt="logo"/>
             <h2>Contact</h2>
           </div>
-            <div className="contact-div">
+            <div className="contact-div" backgroundColor="#0C243C">
 
             <a href="mailto:barnwell.elliot@gmail.com" target="_blank" rel="noopener noreferrer"><img className="contact-icon" src={gmail} alt="gmail-img"/></a>
             <a href="https://www.linkedin.com/in/elliot-barnwell-9b990663/" target="_blank" rel="noopener noreferrer"><img className="contact-icon" src={linkedIn} alt="linkedIn-img"/></a>

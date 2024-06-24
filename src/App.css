@@ -37,7 +37,6 @@ h2{
   flex-direction: column;
   align-items: center;
   background-color: #0C243C;
-  border-radius: 50px;
   margin-bottom: 100px;
   padding-bottom: 50px;
 }
@@ -48,11 +47,11 @@ h2{
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding-top: 2vh;
+  padding-top: 1vh;
   padding-bottom: 2vh;
   color: #55C2C3;
   background-color: #0C243C;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   min-width: 500px;
 }
 
@@ -167,12 +166,14 @@ section{
   flex-direction: row;
   align-content: center;
   justify-content: center;
+  background-color: #0C243C;
+  padding-bottom: 30px;
 }
 
 .contact-icon{
-  margin-left: 20px;
-  margin-right: 20px;
-  height: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 80px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -233,16 +234,16 @@ section{
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 10px;
   padding: 1em 1em 1em 1em;
 }
 
 .hobby-div{
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 10px;
   padding: 1em 1em 1em 1em;
+  height: 300px;
 }
 
 .skills-list{
@@ -266,7 +267,7 @@ section{
 }
 
 .hobby-img{
-  max-width: 200px;
+  max-width: 125px;
   flex: 1;
   margin: 2vh 2vw 2vh 2vw;
 }
@@ -439,7 +440,6 @@ section{
     width: 200px;
     margin: 1em 1em 1em 1em;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    border-radius: 10px;
     padding: 1em 1em 1em 1em;
   }
 }

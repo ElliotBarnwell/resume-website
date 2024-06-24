@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
-import mando from '../images/mando_helmet_1.jpeg';
+import mando from '../images/prof-cropped.jpg';
 
 class ProfImage extends Component {
   getImgStyle = () => {
     return {
             width:'auto',
             maxHeight: '450px',
-            paddingTop: '100px',
+             paddingTop: '25px',
+            // paddingBottom: '100px',
             paddingLeft: '50px'
+            
           };
   }
   render() {

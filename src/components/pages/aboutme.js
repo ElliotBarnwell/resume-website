@@ -14,7 +14,7 @@ export default function AboutMe(){
     return (
         <section id="aboutme" >
 
-<div className="content-section">
+  <div className="content-section">
               <Box
               maxHeight={600}
               width={1000}
@@ -45,8 +45,8 @@ export default function AboutMe(){
             <Typography variant="h2" sx={{fontWeight: 600, paddingLeft: 5}}>Skills</Typography>
             </div>
             <div className="experience">
-              {skillsCard("Cloud Technology", ["AWS", "Github Actions", "Buildkite"])}
-              {skillsCard("Build Tools", ["CirclCI", "GCP"])}
+              {skillsCard("Platform", ["AWS", "GCP"])}
+              {skillsCard("Build Tools", ["CircleCI", "Github Actions", "Buildkite", "Jenkins"])}
               {skillsCard("Languages", ["Go", "Python", "Typescript", "Java", "Ruby"])}
               {skillsCard("Other Tools", ["Terraform", "Kubernetes", "Docker", "Prometheus"])}
             </div>
@@ -91,10 +91,10 @@ export function skillsCard(title, contents) {
   return(
     <Card
     variant="outlined"
-    sx={{width: 225, height: 250, paddingLeft: 2, paddingRight: 2, marginLeft: 3, marginRight: 3, boxShadow: 5
+    sx={{width: 250, height: 275, paddingLeft: 2, paddingRight: 2, marginLeft: 3, marginRight: 3, boxShadow: 5, backgroundColor: '#0C243C', color: '#ffff'
     }}>
       <CardContent>
-        <Typography variant="h5" color="text.primary" gutterBottom sx={{height: 30}}>
+        <Typography variant="h4" color="text.primary" gutterBottom sx={{height: 50, color: '#ffff'}}>
          {title}
         </Typography>
        <Divider/ >

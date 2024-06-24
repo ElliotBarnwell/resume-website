@@ -11,7 +11,7 @@ export default function Home(){
       <div className="app-main-div">
         <section id="home">
 
-      <div className="intro" style={{backgroundColor:"#0C243C", paddingBottom: 20, borderRadius: 50, paddingRight: 75}}>
+      <div className="intro" style={{backgroundColor:"#0C243C", paddingBottom: 20, paddingRight: 75}}>
         <Box
               height={400}
               width={1000}
@@ -20,7 +20,7 @@ export default function Home(){
               my={4}
               display="flex"
               flexDirection="column"
-              marginTop={15}
+              marginTop={5}
               gap={2}
               p={2}
               sx={{ border: '3px solid grey'}}
