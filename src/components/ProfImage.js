@@ -5,11 +5,10 @@ class ProfImage extends Component {
   getImgStyle = () => {
     return {
             width:'auto',
-            maxHeight: '450px',
-             paddingTop: '25px',
-            // paddingBottom: '100px',
-            paddingLeft: '50px'
-            
+            maxHeight: '500px',
+            marginLeft: '50px',
+            paddingTop: '50px',
+            paddingBottom: '50px'
           };
   }
   render() {

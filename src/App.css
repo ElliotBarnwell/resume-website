@@ -84,6 +84,8 @@ section{
 .intro{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-header{
@@ -127,6 +129,11 @@ section{
 .project-pic{
   width: auto;
   height: 300px;
+}
+
+.MuiPaper-root{
+  background-color: #0C243C !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .project-summary{
@@ -184,8 +191,8 @@ section{
 
 .app-main-div {
   font-size: calc(12px + 2vmin);
-  margin-left: 25vw;
-  margin-right: 25vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .github-div{
@@ -206,9 +213,11 @@ section{
   margin-right: 10vw;
 }
 
-.aboutme-summary{
+.about-me-summary{
   display: flex;
   flex-direction: row;
+  margin-left: 100px;
+  margin-right: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -244,6 +253,12 @@ section{
   border-radius: 10px;
   padding: 1em 1em 1em 1em;
   height: 300px;
+  background-color: #0C243C;
+}
+
+.intro-text{
+  height: 400px;
+  width: 1000px;
 }
 
 .skills-list{
@@ -255,7 +270,6 @@ section{
 }
 
 .summary-div {
-  margin-bottom: 40px;
   margin-right: 50px;
   margin-right: 50px;
 }
@@ -317,8 +331,7 @@ section{
     display: flex;
     flex-direction: column;
     min-height: 10vh;
-    white-space: nowrap;
-    align-items: center;
+    justify-content: center;
   }
 
   .summary-div {
@@ -364,11 +377,13 @@ section{
     font-size: calc(3px + 2vmin);
   }
 
-  .aboutme-summary{
+  .about-me-summary{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .contact-icon{
@@ -385,12 +400,6 @@ section{
   .education-summary{
     width: 100%;
     text-align: center;
-  }
-
-  .about-me-summary{
-    margin-bottom: 2vh;
-    margin-left: 3vw;
-    margin-right: 3vw;
   }
 
   .tech-div{
@@ -425,9 +434,10 @@ section{
   }
 
   .nav-list{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .hobby-img{
@@ -441,5 +451,29 @@ section{
     margin: 1em 1em 1em 1em;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     padding: 1em 1em 1em 1em;
+    background-color: #0C243C;
+  }
+
+  .experience-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .intro-text{
+    height: 400px;
+    max-width: 500px;
+  }
+
+  .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile{
+    margin-top: 300px;
+    margin-left: 0px !important; 
   }
 }

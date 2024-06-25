@@ -38,7 +38,7 @@ export default function Projects(){
 }
 
 const textFastCard = (
-  <React.Fragment>
+  <Card sx={{height: 625}}>
     <CardContent sx={{ backgroundColor: '#0C243C', color: '#ffff'}}>
       <Typography variant="h4" gutterBottom>
         Android Application
@@ -53,16 +53,16 @@ const textFastCard = (
         alt="textfast icon"
         sx={{paddingBottom: 1}}
       />
-      <Typography sx={{marginTop: 5}}>
+      <Typography variant="subtitle1" sx={{marginTop: 5}}>
       Ever want to test your texting speed?
               Well now is your chance with Textfast! Compete with yourself and beat your highest score
       </Typography>
     </CardContent>
-  </React.Fragment>
+  </Card>
 );
 
 const youtubeCard = (
-  <React.Fragment>
+  <Card sx={{height: 625}}>
     <CardContent sx={{ backgroundColor: '#0C243C', color: '#ffff'}}>
       <Typography variant="h4" gutterBottom>
       Youtube Channel
@@ -81,5 +81,5 @@ const youtubeCard = (
       Youtube channel reviewing PEVs and ride vids in San Francisco. Check out some vids!
       </Typography>
     </CardContent>
-  </React.Fragment>
+  </Card>
 );

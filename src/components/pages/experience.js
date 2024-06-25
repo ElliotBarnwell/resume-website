@@ -34,7 +34,8 @@ export default function Experience(){
 }
 
 const cruiseCard = (
-  <React.Fragment>
+  <Card
+  variant="outlined" >
     <CardContent sx={{ backgroundColor: '#0C243C', color: '#ffff', height: '475px'}}>
       <Typography variant="h4" gutterBottom>
         Cruise (Current)
@@ -58,11 +59,12 @@ const cruiseCard = (
         <br />
       </Typography>
     </CardContent>
-  </React.Fragment>
+  </Card>
 );
 
 const vtsCard = (
-  <React.Fragment>
+  <Card
+  variant="outlined">
     <CardContent sx={{ backgroundColor: '#0C243C', color: '#ffff', height: '475px'}}>
       <Typography variant="h4" gutterBottom>
       VTS Inc.
@@ -85,11 +87,12 @@ const vtsCard = (
         <br />
       </Typography>
     </CardContent>
-  </React.Fragment>
+  </Card>
 );
 
 const ecobeeCard = (
-  <React.Fragment>
+  <Card
+  variant="outlined">
     <CardContent sx={{ backgroundColor: '#0C243C', color: '#ffff', height: '475px'}}>
       <Typography variant="h4" gutterBottom>
         Ecobee
@@ -113,5 +116,5 @@ const ecobeeCard = (
         <br />
       </Typography>
     </CardContent>
-  </React.Fragment>
+  </Card>
 );
