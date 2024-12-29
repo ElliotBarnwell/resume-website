@@ -2,7 +2,7 @@ import React from 'react';
 import AboutMe from './aboutme.js'
 import Projects from './projects.js'
 import Contact from './contact.js'
-import Summary from '../summary.js'
+import Summary from '../Summary.js'
 import ProfilePic from '../profilePic.js'
 
 export default function Home(){
