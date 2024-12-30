@@ -284,6 +284,10 @@ section{
   flex: 1;
 }
 
+.youtube-desc{
+  padding-top: 40px;
+}
+
 
 .Summary-div {
   border-style: 'groove';

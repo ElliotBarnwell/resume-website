@@ -8,6 +8,10 @@ import cruiseLogo from '../../images/cruise-logo.png';
 import vtsLogo from '../../images/vts-logo.png';
 import ecobeeLogo from '../../images/ecobee-logo.png';
 
+export const cardHeight = '600px'
+export const textColor = '#ffff'
+export const bgColor = '#00415A'
+
 export default function Experience(){
     return (
         <section id="experience">
@@ -34,11 +38,11 @@ export default function Experience(){
 const cruiseCard = (
   <Card
   variant="outlined" >
-    <CardContent sx={{ backgroundColor: '#00415A', color: '#ffff', height: '520px'}}>
+    <CardContent sx={{ backgroundColor: bgColor, color: textColor, height: cardHeight}}>
       <Typography variant="h3" gutterBottom>
         Cruise (Current)
       </Typography>
-      <Typography variant="h4" component="div">
+      <Typography variant="h4" component="div" sx={{height: '100px'}}>
         Senior Software Engineer
       </Typography>
       <Typography sx={{ mb: 1.5 }} >
@@ -49,9 +53,8 @@ const cruiseCard = (
         height="194"
         image={cruiseLogo}
         alt="Paella dish"
-        sx={{paddingBottom: "10px", paddingTop: "28px"}}
       />
-      <Typography sx={{marginTop: 3}}>
+      <Typography sx={{marginTop: 3, fontSize: 20}}>
       Apart of the Platform Engineering team for an application that AV engineers
                     used for simulation testing and analysis
         <br />
@@ -63,11 +66,11 @@ const cruiseCard = (
 const vtsCard = (
   <Card
   variant="outlined">
-    <CardContent sx={{ backgroundColor: '#00415A', color: '#ffff', height: '520px'}}>
+    <CardContent sx={{ backgroundColor: bgColor, color: textColor, height: cardHeight}}>
       <Typography variant="h3" gutterBottom>
       VTS Inc.
       </Typography>
-      <Typography variant="h4" component="div">
+      <Typography component="div" sx={{height: '100px', fontSize: 30}}>
       Software Engineer Build & Test infrastructure
       </Typography>
       <Typography sx={{ mb: 1.5 }} >
@@ -79,7 +82,7 @@ const vtsCard = (
         image={vtsLogo}
         alt="Paella dish"
       />
-      <Typography sx={{marginTop: 4}} >
+      <Typography sx={{marginTop: 4, fontSize: 20}} >
         Lead application migrations to AWS for scalability
               Configured all 3rd party tools for our applications in AWS
         <br />
@@ -91,14 +94,14 @@ const vtsCard = (
 const ecobeeCard = (
   <Card
   variant="outlined">
-    <CardContent sx={{ backgroundColor: '#00415A', color: '#ffff', height: '520px'}}>
+    <CardContent sx={{ backgroundColor: bgColor, color: textColor, height: cardHeight}}>
       <Typography variant="h3" gutterBottom>
         Ecobee
       </Typography>
-      <Typography variant="h4" component="div">
+      <Typography variant="h4" component="div" sx={{height: '100px'}}>
         Senior Software Engineer
       </Typography>
-      <Typography sx={{ mb: 1.5 }} >
+      <Typography sx={{ mb: 1.5, bottom: 0 }} >
         April 2019 - May 2020
       </Typography>
       <CardMedia
@@ -106,9 +109,8 @@ const ecobeeCard = (
         height="194"
         image={ecobeeLogo}
         alt="Paella dish"
-        sx={{paddingBottom: "15px", paddingTop: "30px"}}
       />
-      <Typography sx={{marginTop: 3}}>
+      <Typography sx={{marginTop: 3, fontSize: 20}}>
       Apart of the Platform Engineering team for an application that AV engineers
                     used for simulation testing and analysis
         <br />
