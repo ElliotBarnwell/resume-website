@@ -36,7 +36,7 @@ section{
 .App {
   text-align: center;
   background-color: white;
-  color: #10454F;
+  color: #00415A;
   font-family: roboto;
   width: 100%;
 }
@@ -266,14 +266,15 @@ section{
 }
 
 #contact{
-  background-color: #506266;
+  background-color: #00415A;
   color: white;
   padding-top: 30px;
 
 }
 
+
 #aboutme{
-  background-color: #506266;
+  background-color: #00415A;
   color: white;
   padding-top: 30px;
   align-content: center;
