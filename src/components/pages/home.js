@@ -5,6 +5,8 @@ import Contact from './contact.js'
 import Summary from '../Summary.js'
 import ProfilePic from '../profilePic.js'
 import Experience from './experience.js'
+import Education from './education.js'
+import Hobbies from './hobbies.js'
 
 export default function Home(){
   return(
@@ -23,6 +25,8 @@ export default function Home(){
         </section>
 
         <AboutMe/>
+        <Education/>
+        <Hobbies/>
         <Experience/>
         <Projects/>
         <Contact/>
